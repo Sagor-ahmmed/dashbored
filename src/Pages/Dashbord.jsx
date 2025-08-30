@@ -30,9 +30,10 @@ const Dashbord = () => {
 
 
     return (
-        <div className='md:max-w-4xl mx-auto p-4'>
+        <div className='max-w-4xl mx-auto p-4'>
             <h1 className='text-2xl font-bold mb-4 text-gray-500'>Dashboard</h1>
-            <div className=' grid grid-cols-2 md:grid-cols-4 items-center gap-4'>
+            <div className='flex justify-center items-center mx0-auto mb-4 text-center'>
+                  <div className=' grid grid-cols-2 md:grid-cols-4 items-center gap-4 mx-auto text-center'>
                 <Grid
                     title={`Active User`}
                     value={data ? data?.ActiveUser : 'Loading...'}
@@ -64,6 +65,8 @@ const Dashbord = () => {
 
 
             </div>
+            </div>
+          
 
             <div className='mt-16 '>
                 <Chart Data={data}/>

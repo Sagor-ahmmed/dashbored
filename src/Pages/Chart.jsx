@@ -30,7 +30,7 @@ const Chart=({Data})=> {
     // Chart.js options
   };
 
-  return <div className='w-3xl mx-auto p-4'>
+  return <div className='w-xl md:w-3xl mx-auto p-4'>
      <Line data={data} options={options} />
   </div>;
 }
